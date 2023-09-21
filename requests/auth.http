@@ -1,0 +1,34 @@
+@api = http://localhost:4000/api/auth
+
+### post register
+POST {{api}}/register
+Content-Type: application/json
+
+{
+  "username": "Julian",
+  "email": "Julian@gmail.com",
+  "password": "julianpsasword"
+}
+
+//Este bloque de código indica una solicitud POST para registrar un nuevo usuario en la API. Incluye los datos del usuario (nombre de usuario, correo electrónico y contraseña) en formato JSON.
+
+### post login
+POST {{api}}/login
+Content-Type: application/json
+
+{
+  "email": "Julian@gmail.com",
+  "password": "julianpsasword"
+}
+
+//Este bloque de código representa una solicitud POST para iniciar sesión en la API. Incluye las credenciales del usuario (correo electrónico y contraseña) en formato JSON.
+
+### verified token
+GET {{api}}/verify
+
+//Este bloque de código indica una solicitud GET para verificar un token en la API. No se proporcionan datos adicionales en el cuerpo de la solicitud.
+
+### Logout
+POST {{api}}/logout
+
+//Este bloque de código representa una solicitud POST para cerrar sesión en la API. No se proporcionan datos adicionales en el cuerpo de la solicitud. 
